@@ -13,7 +13,7 @@ uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
 
 if uploaded_file is not None:
     data = pd.read_csv(uploaded_file, encoding="latin-1")
-    st.write(data.head(3))
+    st.write(data.head(100))
 
     df = SmartDataframe(data, config={"llm": llm})
     prompt = st.text_area("Enter your prompt:")
