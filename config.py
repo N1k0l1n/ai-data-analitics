@@ -8,7 +8,7 @@ load_dotenv()
 
 class Settings(BaseSettings):
     openai_api_key: str
-   
+    pandas_api_key: str 
 
     class Config:
         env_file = ".env"
