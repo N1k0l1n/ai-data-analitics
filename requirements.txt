@@ -1,4 +1,4 @@
 pandas
 pandasai
 streamlit
-numpy
+numpy==1.26.4
